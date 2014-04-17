@@ -1,3 +1,12 @@
+thrift (0.9.1-1.1) stable; urgency=low
+
+  * Non-maintainer upload.
+  * Simplified debian packaging
+  * libthrift0 -> libthrift2
+  * Package only C/C++ libs and compiler
+
+ -- Patrik Modesto <patrik.modesto@firma.seznam.cz>  Wed, 16 Apr 2014 09:06:32 +0200
+
 thrift (0.9.1) stable; urgency=low
 
   * update to 0.9.1

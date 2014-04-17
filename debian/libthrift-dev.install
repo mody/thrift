@@ -1,4 +1,8 @@
+usr/include
 usr/lib/*.a
 usr/lib/*.la
+usr/lib/libthrift_c_glib.so
+usr/lib/libthriftnb.so
+usr/lib/libthrift.so
+usr/lib/libthriftz.so
 usr/lib/pkgconfig
-usr/include
