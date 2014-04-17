@@ -25,7 +25,7 @@ lib_LTLIBRARIES = libthrift_c_glib.la
 pkgconfig_DATA = thrift_c_glib.pc
 
 common_cflags = -g -Wall -W -Werror -Isrc -I src/thrift/c_glib $(GLIB_CFLAGS)
-common_ldflags = -g -Wall -W $(GLIB_LDFLAGS) @GCOV_LDFLAGS@
+common_ldflags = -g -Wall -W $(GLIB_LDFLAGS) @GCOV_LDFLAGS@ @VERSION_INFO@
 
 # this removes optimizations and adds coverage flags
 CFLAGS = @GCOV_CFLAGS@

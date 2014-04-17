@@ -26,6 +26,11 @@ AC_CONFIG_AUX_DIR([.])
 AM_INIT_AUTOMAKE([1.11 tar-ustar foreign])
 PKG_PROG_PKG_CONFIG
 
+# http://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html
+VERSION_INFO="-version-info 2:0:0"
+AC_SUBST(VERSION_INFO)
+
+
 AC_ARG_VAR([PY_PREFIX], [Prefix for installing Python modules.
                          (Normal --prefix is ignored for Python because
                          Python has different conventions.)
@@ -94,7 +99,7 @@ AM_PROG_LEX
 AC_PROG_LN_S
 AC_PROG_MKDIR_P
 AC_PROG_AWK
-AC_PROG_RANLIB
+LT_INIT
 
 AC_LANG([C++])
 
