@@ -28,7 +28,7 @@ all-local:
 # Old version (can't put inline because it's not portable).
 #$(PYTHON) setup.py install --prefix=$(prefix) --root=$(DESTDIR) $(PYTHON_SETUPUTIL_ARGS)
 install-exec-hook:
-	$(PYTHON) setup.py install --root=$(DESTDIR) --prefix=$(PY_PREFIX) $(PYTHON_SETUPUTIL_ARGS)
+	$(PYTHON) setup.py install --root=$(DESTDIR) --prefix=$(PY_PREFIX) --install-layout=deb $(PYTHON_SETUPUTIL_ARGS)
 
 clean-local:
 	$(RM) -r build
