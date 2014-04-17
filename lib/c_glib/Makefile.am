@@ -52,6 +52,7 @@ libthrift_c_glib_la_SOURCES = src/thrift/c_glib/thrift.c \
                               src/thrift/c_glib/server/thrift_simple_server.c
 
 libthrift_c_glib_la_CFLAGS = $(common_cflags)
+libthrift_c_glib_la_LDFLAGS = $(common_ldflags)
 
 include_thriftdir = $(includedir)/thrift/c_glib
 include_thrift_HEADERS = \
